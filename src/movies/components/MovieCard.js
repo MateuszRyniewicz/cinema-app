@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
 import './MovieCard.scss';
-
+//opis moze miec 100 znaków if >100 to wyśeitlają się 3 znaki po klik czyraj więcej opis sie rozrzezy.
 const MovieCard = ({
 	img,
 	title,
@@ -10,7 +10,7 @@ const MovieCard = ({
 	year,
 	time,
 	description,
-	link,
+	id,
 	linkToRead,
 }) => {
 	const navigate = useNavigate();
@@ -18,10 +18,7 @@ const MovieCard = ({
 	return (
 		<div className='card'>
 			<div className='card-box-image'>
-				<img
-					src={img}
-					alt={title}
-				/>
+				<img src={img} alt={title} />
 			</div>
 			<div className='card-details'>
 				<h2 className='card-details-title'>{title}</h2>
@@ -41,7 +38,7 @@ const MovieCard = ({
 				<div className='card-box-button'>
 					<button
 						className='card-button-go-to-booking-page'
-						onClick={() => navigate(`/${link}`)}>
+						onClick={() => navigate(`/movies/${id}`)}>
 						zobacz terminy
 					</button>
 				</div>

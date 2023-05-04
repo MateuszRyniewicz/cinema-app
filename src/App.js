@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './home/pages/HomePage';
 import MoviesPage from './movies/pages/MoviesPage';
 
-import './global.scss';
+import './styles/global.scss';
 
 const App = () => {
 	return (

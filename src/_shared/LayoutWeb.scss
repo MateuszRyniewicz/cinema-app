@@ -1,0 +1,42 @@
+$main-color-bacground: #041c32;
+$second-color: #ecb365;
+$third-color: #fff;
+
+.header {
+	height: 50px;
+
+	background-color: $main-color-bacground;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.menu {
+		display: flex;
+		justify-content: center;
+		gap: 20px;
+		color: $third-color;
+
+		.menu-link {
+			color: $third-color;
+			transition: color 0.3s;
+
+			&:hover {
+				color: $second-color;
+			}
+		}
+	}
+}
+
+.main {
+	min-height: calc(100vh - 200px);
+}
+
+.footer {
+	height: 50px;
+	margin-top: 100px;
+	background-color: $main-color-bacground;
+	color: $third-color;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

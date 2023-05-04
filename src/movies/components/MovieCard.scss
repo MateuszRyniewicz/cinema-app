@@ -1,0 +1,71 @@
+$main-color-bacground: #041c32;
+$second-color: #ecb365;
+$third-color: #fff;
+
+.card {
+	border-radius: 10px;
+	background-color: #041c32;
+	color: $third-color;
+	width: 550px;
+	height: 370px;
+	display: flex;
+	align-items: center;
+
+	.card-box-image {
+		width: 40%;
+		height: 100%;
+		border-radius: 10px;
+	}
+
+	.card-details {
+		height: 100%;
+		width: 60%;
+		padding: 20px;
+
+		.card-details-title {
+			font-size: 32px;
+			font-weight: 500;
+			margin-bottom: 10px;
+		}
+
+		.card-details-box-text {
+			height: 10%;
+			display: flex;
+			justify-content: flex-start;
+			gap: 20px;
+		}
+
+		.card-details-box-text-main {
+			height: 60%;
+			font-size: 16px;
+
+			.card-details-box-text-main-link {
+				padding: 25px 0;
+
+				.card-details-text-main-link {
+					color: #ecb365;
+					transition: color 0.3s;
+					&:hover {
+						color: $third-color;
+					}
+				}
+			}
+		}
+	}
+
+	.card-box-button {
+		padding: 0 5px;
+		.card-button-go-to-booking-page {
+			padding: 10px 20px;
+			font-size: 14px;
+			border: 2px solid #ecb365;
+			border-radius: 10px;
+			cursor: pointer;
+			transition: opacity 0.3s, color 0.3s;
+			&:hover {
+				opacity: 0.96;
+				color: #ecb365;
+			}
+		}
+	}
+}

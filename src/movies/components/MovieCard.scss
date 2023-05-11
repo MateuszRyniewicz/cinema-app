@@ -39,6 +39,12 @@ $third-color: #fff;
 			height: 60%;
 			font-size: 16px;
 
+			.card-details-box-text-show-more {
+				padding: 5px 0;
+				font-size: 14px;
+				color: #ecb365;
+				cursor: pointer;
+			}
 			.card-details-box-text-main-link {
 				padding: 25px 0;
 

@@ -8,24 +8,16 @@ import { movieTerms } from '../../db/movieTerms';
 
 import './MoviesPages.scss';
 
+
 const MoviesPage = () => {
-	const [test, setTest] = useState(false);
 	return (
-		<LayoutWeb>
-			<>
+		
+			<LayoutWeb>
 				<div className='container-cards'>
 					{movies.map((movie) => {
-						const terms = movieTerms.filter(
-							(term) => term.idMovie === movie.id
-						);
-						// {
-						// 	terms.map((term) => {
-						// 		const movie1 = movieTerms.filter(
-						// 			(movie1) => movie1.available == term.available
-						// 		);
-						// 		console.log(movie1);
-						// 	});
-						// }
+						const available = movieTerms
+							.filter((term) => term.idMovie === movie.id)
+							.some((term) => term.available);
 
 						return (
 							<MovieCard
@@ -37,13 +29,13 @@ const MoviesPage = () => {
 								description={movie.description}
 								linkToRead={movie.linkToRead}
 								id={movie.id}
-								available={false}
+								available={available}
 							/>
 						);
 					})}
 				</div>
-			</>
-		</LayoutWeb>
+			</LayoutWeb>
+	
 	);
 };
 

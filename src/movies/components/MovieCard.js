@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
 import './MovieCard.scss';
-import { text } from '@fortawesome/fontawesome-svg-core';
-//opis moze miec 100 znaków if >100 to wyśeitlają się 3 znaki po klik czyraj więcej opis sie rozrzezy.
+
 const MovieCard = ({
 	img,
 	title,
@@ -16,6 +15,7 @@ const MovieCard = ({
 	available,
 }) => {
 	const [isReadMore, setIsReadMore] = useState(false);
+
 
 	const navigate = useNavigate();
 
@@ -33,8 +33,10 @@ const MovieCard = ({
 				</div>
 				<div className='card-details-box-text-main'>
 					{!isReadMore ? description.slice(0, 50) + '...' : description}
-					{description.length > 100 && (
-						<p onClick={() => setIsReadMore(!isReadMore)}>
+					{description.length > 50 && (
+						<p
+							className='card-details-box-text-show-more'
+							onClick={() => setIsReadMore(!isReadMore)}>
 							{isReadMore ? '...show less' : '...show more'}
 						</p>
 					)}

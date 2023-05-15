@@ -7,6 +7,8 @@ import LayoutWeb from '../../_shared/LayoutWeb';
 import { movieTerms } from '../../db/movieTerms.js';
 import PopupReservationPlace from '../components/PopupReservationPlace';
 
+import './MoviePage.scss';
+
 const MoviePage = () => {
 	const [isOpenPopupReservactionPlace, setIsOpenPopupReservactionPlace] =
 		useState(false);
@@ -26,7 +28,7 @@ const MoviePage = () => {
 			)}
 
 			<LayoutWeb>
-				<h3>{id}</h3>
+				{/* <h3>{id}</h3> */}
 
 				<table>
 					<thead>

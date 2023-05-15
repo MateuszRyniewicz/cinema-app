@@ -2,46 +2,56 @@ $main-color-bacground: #041c32;
 $second-color: #ecb365;
 $third-color: #fff;
 
-.container-home-page {
-	padding: 100px 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	gap: 20px;
-	.home-page-box-text {
-		margin-bottom: 30px;
-
-		padding: 20px;
+.main-home-page {
+	width: 70%;
+	background-color: #041c32;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	.container-home-page {
+		padding: 100px 0;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
-		gap: 10px;
+		gap: 20px;
+		.home-page-box-text {
+			margin-bottom: 30px;
 
-		.home-page-text-main {
-			font-size: 30px;
-			font-weight: 300;
+			padding: 20px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			gap: 10px;
+
+			.home-page-text-main {
+				color: $third-color;
+				font-size: 30px;
+				font-weight: 300;
+			}
+
+			.home-page-text-below {
+				color: $third-color;
+				font-size: 16px;
+				font-weight: 500;
+			}
 		}
+		.home-page-box-button {
+			padding: 0 5px;
 
-		.home-page-text-below {
-			font-size: 16px;
-			font-weight: 500;
-		}
-	}
-	.home-page-box-button {
-		padding: 0 5px;
-
-		.home-page-button-go-to-movies-page {
-			padding: 14px 42px;
-			font-size: 16px;
-			border: 2px solid #ecb365;
-			border-radius: 10px;
-			cursor: pointer;
-			transition: opacity 0.3s, color 0.3s;
-			&:hover {
-				opacity: 0.96;
-				color: #ecb365;
+			.home-page-button-go-to-movies-page {
+				padding: 14px 42px;
+				font-size: 16px;
+				border: 2px solid #ecb365;
+				border-radius: 10px;
+				cursor: pointer;
+				transition: opacity 0.3s, color 0.3s;
+				&:hover {
+					opacity: 0.96;
+					color: #ecb365;
+				}
 			}
 		}
 	}

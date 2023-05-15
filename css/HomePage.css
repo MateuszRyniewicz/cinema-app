@@ -1,4 +1,13 @@
-.container-home-page {
+.main-home-page {
+  width: 70%;
+  background-color: #041c32;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.main-home-page .container-home-page {
   padding: 100px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -15,7 +24,7 @@
           flex-direction: column;
   gap: 20px;
 }
-.container-home-page .home-page-box-text {
+.main-home-page .container-home-page .home-page-box-text {
   margin-bottom: 30px;
   padding: 20px;
   display: -webkit-box;
@@ -33,18 +42,20 @@
           flex-direction: column;
   gap: 10px;
 }
-.container-home-page .home-page-box-text .home-page-text-main {
+.main-home-page .container-home-page .home-page-box-text .home-page-text-main {
+  color: #fff;
   font-size: 30px;
   font-weight: 300;
 }
-.container-home-page .home-page-box-text .home-page-text-below {
+.main-home-page .container-home-page .home-page-box-text .home-page-text-below {
+  color: #fff;
   font-size: 16px;
   font-weight: 500;
 }
-.container-home-page .home-page-box-button {
+.main-home-page .container-home-page .home-page-box-button {
   padding: 0 5px;
 }
-.container-home-page .home-page-box-button .home-page-button-go-to-movies-page {
+.main-home-page .container-home-page .home-page-box-button .home-page-button-go-to-movies-page {
   padding: 14px 42px;
   font-size: 16px;
   border: 2px solid #ecb365;
@@ -53,7 +64,7 @@
   -webkit-transition: opacity 0.3s, color 0.3s;
   transition: opacity 0.3s, color 0.3s;
 }
-.container-home-page .home-page-box-button .home-page-button-go-to-movies-page:hover {
+.main-home-page .container-home-page .home-page-box-button .home-page-button-go-to-movies-page:hover {
   opacity: 0.96;
   color: #ecb365;
 }/*# sourceMappingURL=HomePage.css.map */

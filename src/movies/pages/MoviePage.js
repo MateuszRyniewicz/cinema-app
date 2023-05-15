@@ -29,31 +29,33 @@ const MoviePage = () => {
 
 			<LayoutWeb>
 				{/* <h3>{id}</h3> */}
-
-				<table>
-					<thead>
-						<tr>
-							<th>Termin</th>
-							<th>Zarezwerwuj miejsce</th>
-						</tr>
-					</thead>
-					<tbody>
-						{terms.map((term) => (
-							<tr key={term.id}>
-								<td>{term.title}</td>
-								<td>
-									<button
-										onClick={() => {
-											setIsOpenPopupReservactionPlace(true);
-											setTmpTerm(term);
-										}}>
-										zobacz wolne miejsca
-									</button>
-								</td>
+				<div className='movie-page-container-table'>
+					<table className='movie-page-table'>
+						<thead className='movie-page-thead'>
+							<tr className='movie-page-tr'>
+								<th className='movie-page-th'>Termin</th>
+								<th className='movie-page-th'>Zarezwerwuj miejsce</th>
 							</tr>
-						))}
-					</tbody>
-				</table>
+						</thead>
+						<tbody className='movie-page-tbody'>
+							{terms.map((term) => (
+								<tr className='movie-page-tr' key={term.id}>
+									<td className='movie-page-td'>{term.title}</td>
+									<td className='movie-page-td'>
+										<button
+											className='movie-page-button'
+											onClick={() => {
+												setIsOpenPopupReservactionPlace(true);
+												setTmpTerm(term);
+											}}>
+											zobacz wolne miejsca
+										</button>
+									</td>
+								</tr>
+							))}
+						</tbody>
+					</table>
+				</div>
 			</LayoutWeb>
 		</>
 	);

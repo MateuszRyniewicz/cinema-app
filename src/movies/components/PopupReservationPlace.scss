@@ -1,8 +1,24 @@
 .popup-reservacion-place {
 	padding: 20px;
-	border: 1px solid black;
 	position: fixed;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+
+	.popup-reservation-place-box-button {
+		padding: 5px;
+		width: 105%;
+		display: flex;
+		justify-content: right;
+		align-items: center;
+
+		.popup-reservation-place-button-close {
+			padding: 5;
+			background-color: transparent;
+			border: none;
+			color: white;
+			font-size: 14px;
+			cursor: pointer;
+		}
+	}
 }

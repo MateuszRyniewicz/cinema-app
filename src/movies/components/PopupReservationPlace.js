@@ -65,8 +65,10 @@ const PopupReservationPlace = ({ setIsOpen, term }) => {
 
 	return (
 		<div className='popup-reservacion-place'>
+			<div className='popup-reservation-place-box-button'>
+				<button className='popup-reservation-place-button-close'  onClick={() => setIsOpen(false)}>X</button>
+			</div>
 			{renderBoard(10, 10)}
-			<button onClick={() => setIsOpen(false)}>X</button>
 		</div>
 	);
 };

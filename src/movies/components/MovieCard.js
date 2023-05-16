@@ -16,7 +16,6 @@ const MovieCard = ({
 }) => {
 	const [isReadMore, setIsReadMore] = useState(false);
 
-
 	const navigate = useNavigate();
 
 	return (
@@ -41,7 +40,10 @@ const MovieCard = ({
 						</p>
 					)}
 					<div className='card-details-box-text-main-link'>
-						<Link to={linkToRead} className='card-details-text-main-link'>
+						<Link
+							target='_blank'
+							to={linkToRead}
+							className='card-details-text-main-link'>
 							Więcej o filmie...
 						</Link>
 					</div>

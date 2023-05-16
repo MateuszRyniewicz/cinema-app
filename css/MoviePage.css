@@ -1,26 +1,25 @@
 .movie-page-container-table {
-  border: 1px solid red;
+  border: 1px solid #000;
   padding: 30px;
 }
 .movie-page-container-table .movie-page-table {
-  border: 1px solid black;
   padding: 20px;
 }
-.movie-page-container-table .movie-page-table .movie-page-thead .movie-page-tr .movie-page-th {
+.movie-page-container-table .movie-page-table .movie-page-th {
   padding: 15px;
   border: 1px solid black;
   font-size: 18px;
   color: #ecb365;
 }
-.movie-page-container-table .movie-page-table .movie-page-tbody .movie-page-tr {
+.movie-page-container-table .movie-page-table .movie-page-tr {
   color: #fff;
 }
-.movie-page-container-table .movie-page-table .movie-page-tbody .movie-page-tr .movie-page-td {
-  border: 1px solid black;
+.movie-page-container-table .movie-page-table .movie-page-tr .movie-page-td {
+  border: 1px solid #000;
   padding: 16px;
   font-size: 18px;
 }
-.movie-page-container-table .movie-page-table .movie-page-tbody .movie-page-tr .movie-page-td .movie-page-button {
+.movie-page-container-table .movie-page-table .movie-page-tr .movie-page-td .movie-page-button {
   padding: 8px 12px;
   font-size: 16px;
   cursor: pointer;
@@ -28,7 +27,7 @@
   -webkit-transition: opacity 0.3s, background-color 0.3s;
   transition: opacity 0.3s, background-color 0.3s;
 }
-.movie-page-container-table .movie-page-table .movie-page-tbody .movie-page-tr .movie-page-td .movie-page-button:hover {
+.movie-page-container-table .movie-page-table .movie-page-tr .movie-page-td .movie-page-button:hover {
   opacity: 0.6;
   background-color: #ecb365;
 }/*# sourceMappingURL=MoviePage.css.map */

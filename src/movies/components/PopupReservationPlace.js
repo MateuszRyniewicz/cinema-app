@@ -1,29 +1,36 @@
 import React, { useState } from 'react';
-
+import {useNavigate } from 'react-router-dom';
 import { termsPlaces } from '../../db/termsPlaces';
 
 import './PopupReservationPlace.scss';
 
 const SquarePlace = ({ number, isAvailable, isBooked, handleBookPlace }) => {
-	const [color, setColor] = useState('green');
 
 	return (
+
 		<div
 			style={{
 				width: '30px',
 				height: '30px',
 				border: '1px solid gray',
-				background: isAvailable ? 'green' : 'red',
+				background: !isAvailable
+					? 'red'
+					: isAvailable && !isBooked
+					? 'green'
+					: 'yellow',
 				cursor: isAvailable ? 'pointer' : 'not-allowed',
-				backgroundColor: isBooked && isAvailable ? 'yellow' : 'green',
 			}}
 			onClick={() => handleBookPlace(number)}>
 			{number}
 		</div>
 	);
 };
-const PopupReservationPlace = ({ setIsOpen, term }) => {
+const PopupReservationPlace = ({ setIsOpen, term, id }) => {
 	const [isBooked, setBooked] = useState([]);
+
+	const navigate = useNavigate();
+
+	const placesURL = isBooked.join('-');
 
 	const termPlaces = termsPlaces.find(
 		(termPlaces) => termPlaces.termId === term.id
@@ -64,13 +71,27 @@ const PopupReservationPlace = ({ setIsOpen, term }) => {
 	};
 
 	return (
-		<div className='popup-reservacion-place'>
-			<div className='popup-reservation-place-box-button'>
-				<button className='popup-reservation-place-button-close'  onClick={() => setIsOpen(false)}>X</button>
+		
+		<>
+			<div className='popup-reservacion-place'>
+				<div className='popup-reservation-place-box-button'>
+					<button
+						className='popup-reservation-place-button-close'
+						onClick={() => setIsOpen(false)}>
+						X
+					</button>
+				</div>
+				{renderBoard(10, 10)}
+				{isBooked.length > 0 && (
+					<button onClick={() => navigate(`/booking/${placesURL}-${id}`)}>
+						Zarezerwuj
+					</button>
+				)}
 			</div>
-			{renderBoard(10, 10)}
-		</div>
+		</>
 	);
 };
 
 export default PopupReservationPlace;
+
+

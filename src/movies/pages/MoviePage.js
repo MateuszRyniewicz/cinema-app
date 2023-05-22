@@ -24,11 +24,10 @@ const MoviePage = () => {
 				<PopupReservationPlace
 					setIsOpen={setIsOpenPopupReservactionPlace}
 					term={tmpTerm}
+					id={id}
 				/>
 			)}
-
 			<LayoutWeb>
-				{/* <h3>{id}</h3> */}
 				<div className='movie-page-container-table'>
 					<table className='movie-page-table'>
 						<thead className='movie-page-thead'>

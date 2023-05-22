@@ -1,10 +1,8 @@
-$main-color-bacground: #041c32;
-$second-color: #ecb365;
-$third-color: #fff;
+@import '../../styles//varibles.scss';
 
 .card {
 	border-radius: 10px;
-	background-color: #041c32;
+	background-color: main-color-bacground;
 	color: $third-color;
 	width: 550px;
 	height: 370px;
@@ -42,14 +40,14 @@ $third-color: #fff;
 			.card-details-box-text-show-more {
 				padding: 5px 0;
 				font-size: 14px;
-				color: #ecb365;
+				color: $second-color;
 				cursor: pointer;
 			}
 			.card-details-box-text-main-link {
 				padding: 25px 0;
 
 				.card-details-text-main-link {
-					color: #ecb365;
+					color: $second-color;
 					transition: color 0.3s;
 					&:hover {
 						color: $third-color;
@@ -64,13 +62,13 @@ $third-color: #fff;
 		.card-button-go-to-booking-page {
 			padding: 10px 20px;
 			font-size: 14px;
-			border: 2px solid #ecb365;
+			border: 2px solid $second-color;
 			border-radius: 10px;
 			cursor: pointer;
 			transition: opacity 0.3s, color 0.3s;
 			&:hover {
 				opacity: 0.96;
-				color: #ecb365;
+				color: $second-color;
 			}
 		}
 	}

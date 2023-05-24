@@ -12,7 +12,7 @@ import './BookingPlace.scss';
 
 const BookingPage = () => {
 	const [isOpen, setIsOpen] = useState(false);
-	
+
 	const { id } = useParams();
 
 	const bookedPlaces = id.split('-');
@@ -50,7 +50,6 @@ const BookingPage = () => {
 			</div>
 			{isOpen && (
 				<PopupConfirmReservation
-					setIsOpen={setIsOpen}
 					bookedPlaces={bookedPlaces}
 					choosenMovie={choosenMovie}
 				/>

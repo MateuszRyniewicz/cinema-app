@@ -19,6 +19,7 @@ const MoviePage = () => {
 	const terms = movieTerms.filter((movieTerm) => movieTerm.idMovie === id);
 
 	return (
+		
 		<>
 			{isOpenPopupReservactionPlace && (
 				<PopupReservationPlace

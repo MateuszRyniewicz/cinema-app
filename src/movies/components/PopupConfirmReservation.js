@@ -4,9 +4,10 @@ import { Link } from 'react-router-dom';
 
 import './PopupConfirmReservation.scss';
 
-const PopupConfirmReservation = ({ setIsOpen, choosenMovie, bookedPlaces }) => {
-	console.log(choosenMovie);
+const PopupConfirmReservation = ({ choosenMovie, bookedPlaces }) => {
+
 	return (
+		
 		<div className='popup-confrim-reservation'>
 			<div className='popup-confirm-reservation-box-image'>
 				<img src={choosenMovie.img} alt={choosenMovie.title} />

@@ -11,6 +11,7 @@ import './MoviesPages.scss';
 const MoviesPage = () => {
 	
 	return (
+		
 		<LayoutWeb>
 			<div className='container-cards'>
 				{movies.map((movie) => {

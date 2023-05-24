@@ -7,6 +7,7 @@ import './HomePage.scss';
 
 const HomePage = () => {
 	return (
+		
 		<LayoutWeb>
 			<main className='main-home-page'>
 				<div className='container-home-page'>

@@ -19,6 +19,7 @@ const MovieCard = ({
 	const navigate = useNavigate();
 
 	return (
+		
 		<div className='card'>
 			<div className='card-box-image'>
 				<img src={img} alt={title} />

@@ -5,17 +5,18 @@ import HomePage from './home/pages/HomePage';
 import MoviesPage from './movies/pages/MoviesPage';
 import MoviePage from './movies/pages/MoviePage';
 import BookingPage from './movies/pages/BookingPage';
+import BookingInfoPage from './movies/pages/BookingInfoPage';
 
 import './styles/global.scss';
 
 const App = () => {
 	return (
-		
 		<Router>
 			<Routes>
 				<Route path='/' element={<HomePage />} />
 				<Route path='/movies' element={<MoviesPage />} />
 				<Route path='/movies/:id' element={<MoviePage />} />
+				<Route path='/booking' element={<BookingInfoPage />} />
 				<Route path='/booking/:id' element={<BookingPage />} />
 			</Routes>
 		</Router>

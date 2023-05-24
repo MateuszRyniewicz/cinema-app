@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
@@ -6,17 +6,21 @@ import { Link } from 'react-router-dom';
 import LayoutWeb from '../../_shared/LayoutWeb';
 import { movies } from '../../db/movies';
 
+import PopupConfirmReservation from '../components/PopupConfirmReservation';
+
 import './BookingPlace.scss';
 
 const BookingPage = () => {
-
+	const [isOpen, setIsOpen] = useState(false);
+	
 	const { id } = useParams();
 
 	const bookedPlaces = id.split('-');
 	const movieId = bookedPlaces.pop();
-	const choosenMovie = movies.find((movie) => movie.id === id);
+	const choosenMovie = movies.find((movie) => movie.id === movieId);
 
 	return (
+
 		<LayoutWeb>
 			<div className='booking-place-box'>
 				<h3 className='booking-place-main-text'>Wybrane Miejsca:</h3>
@@ -25,7 +29,7 @@ const BookingPage = () => {
 					<ul>
 						{bookedPlaces.map((place, key) => (
 							<li key={key}>
-								Miejsce numer:{' '}
+								Miejsce numer:
 								<p className='booking-place-details-text-color'>{place}</p>
 							</li>
 						))}
@@ -35,7 +39,7 @@ const BookingPage = () => {
 				<div className='booking-place-box-buttons'>
 					<button
 						className='booking-place-box-button'
-						onClick={() => console.log('dziekujemy za zakupy popup')}>
+						onClick={() => setIsOpen(true)}>
 						Tak
 					</button>
 
@@ -44,6 +48,13 @@ const BookingPage = () => {
 					</Link>
 				</div>
 			</div>
+			{isOpen && (
+				<PopupConfirmReservation
+					setIsOpen={setIsOpen}
+					bookedPlaces={bookedPlaces}
+					choosenMovie={choosenMovie}
+				/>
+			)}
 		</LayoutWeb>
 	);
 };

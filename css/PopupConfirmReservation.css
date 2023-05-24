@@ -1,0 +1,70 @@
+.popup-confrim-reservation {
+  border-radius: 10px;
+  background-color: #04293a;
+  color: #fff;
+  width: 550px;
+  height: 470px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.popup-confrim-reservation .popup-confirm-reservation-details {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+.popup-confrim-reservation .popup-confirm-reservation-details .popup-confirm-reservation-details-text {
+  padding: 40px;
+  text-align: center;
+}
+.popup-confrim-reservation .popup-confirm-reservation-details .popup-confirm-reservation-details-text .popup-confirm-reservation-details-text-color {
+  padding: 10px;
+  color: #ecb365;
+  font-weight: 700;
+}
+.popup-confrim-reservation .popup-confirm-reservation-details .popup-confirm-reservation-details-box-buttons {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.popup-confrim-reservation .popup-confirm-reservation-details .popup-confirm-reservation-details-box-buttons .popup-confirm-reservation-details-button {
+  padding: 10px 20px;
+  font-size: 14px;
+  border: 2px solid #ecb365;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: opacity 0.3s, color 0.3s;
+  transition: opacity 0.3s, color 0.3s;
+}
+.popup-confrim-reservation .popup-confirm-reservation-details .popup-confirm-reservation-details-box-buttons .popup-confirm-reservation-details-button:hover {
+  opacity: 0.96;
+  color: #ecb365;
+}
+.popup-confrim-reservation .popup-confirm-reservation-box-image {
+  width: 50%;
+}/*# sourceMappingURL=PopupConfirmReservation.css.map */

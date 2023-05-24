@@ -28,7 +28,7 @@ const LayoutWeb = ({ children }) => {
 				</nav>
 			</header>
 			<main className='main'>{children}</main>
-			<footer className='footer'>Movies App</footer>
+			<footer className='footer'>Cinema App</footer>
 		</>
 	);
 };

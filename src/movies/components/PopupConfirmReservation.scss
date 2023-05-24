@@ -1,0 +1,58 @@
+@import '../../styles//varibles.scss';
+
+.popup-confrim-reservation {
+	border-radius: 10px;
+	background-color: $fifth-color;
+	color: $third-color;
+	width: 550px;
+	height: 470px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	justify-content: center;
+
+	.popup-confirm-reservation-details {
+		width: 50%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		gap: 10px;
+		.popup-confirm-reservation-details-text {
+			padding: 40px;
+			text-align: center;
+
+			.popup-confirm-reservation-details-text-color {
+				padding: 10px;
+				color: $second-color;
+				font-weight: 700;
+			}
+		}
+
+		.popup-confirm-reservation-details-box-buttons {
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			.popup-confirm-reservation-details-button {
+				padding: 10px 20px;
+				font-size: 14px;
+				border: 2px solid $second-color;
+				border-radius: 10px;
+				cursor: pointer;
+				transition: opacity 0.3s, color 0.3s;
+				&:hover {
+					opacity: 0.96;
+					color: $second-color;
+				}
+			}
+		}
+	}
+
+	.popup-confirm-reservation-box-image {
+		width: 50%;
+	}
+}

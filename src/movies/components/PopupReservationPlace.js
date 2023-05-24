@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
-import {useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { termsPlaces } from '../../db/termsPlaces';
 
 import './PopupReservationPlace.scss';
 
 const SquarePlace = ({ number, isAvailable, isBooked, handleBookPlace }) => {
-
 	return (
-
 		<div
 			style={{
 				width: '30px',
@@ -41,11 +39,8 @@ const PopupReservationPlace = ({ setIsOpen, term, id }) => {
 
 		if (!termPlaces.bookedPlaces.includes(id) && !isBooked.includes(id)) {
 			setBooked([...isBooked, id]);
-
-			console.log(isBooked);
 		} else if (!termPlaces.bookedPlaces.includes(id) && isBooked.includes(id)) {
 			setBooked(isBooked.filter((element) => element !== id));
-			console.log(isBooked);
 		}
 	};
 
@@ -67,11 +62,11 @@ const PopupReservationPlace = ({ setIsOpen, term, id }) => {
 
 			rows.push(<div style={{ display: 'flex' }}>{columns}</div>);
 		}
+
 		return rows;
 	};
 
 	return (
-		
 		<>
 			<div className='popup-reservacion-place'>
 				<div className='popup-reservation-place-box-button'>
@@ -83,9 +78,11 @@ const PopupReservationPlace = ({ setIsOpen, term, id }) => {
 				</div>
 				{renderBoard(10, 10)}
 				{isBooked.length > 0 && (
-					<button onClick={() => navigate(`/booking/${placesURL}-${id}`)}>
-						Zarezerwuj
-					</button>
+					<div className='popup-reservation-place-box-button-reservation'>
+						<button className='popup-reservation-place-button-go-to-booking' onClick={() => navigate(`/booking/${placesURL}-${id}`)}>
+							Zarezerwuj
+						</button>
+					</div>
 				)}
 			</div>
 		</>
@@ -93,5 +90,3 @@ const PopupReservationPlace = ({ setIsOpen, term, id }) => {
 };
 
 export default PopupReservationPlace;
-
-

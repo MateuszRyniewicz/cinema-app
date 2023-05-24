@@ -5,3 +5,4 @@
 - CA1: Dodanie tła w całej aplikacji.
 - CA1: Stylowanie Tabeli w MoviePage. 
 - CA1: dodanie funkcjonalności przekazywania id w url'u.
+- CA1: stylowanie popup reservation.

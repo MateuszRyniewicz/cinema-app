@@ -1,5 +1,7 @@
 .popup-reservacion-place {
-  padding: 20px;
+  background-color: #041c32;
+  border-radius: 10px 10px;
+  padding: 30px 50px;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -24,6 +26,30 @@
   background-color: transparent;
   border: none;
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
   cursor: pointer;
+}
+.popup-reservacion-place .popup-reservation-place-box-button-reservation {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #fff;
+  border-radius: 0 0 10px 10px;
+}
+.popup-reservacion-place .popup-reservation-place-box-button-reservation .popup-reservation-place-button-go-to-booking {
+  padding: 10px 20px;
+  font-size: 14px;
+  border: 2px solid #ecb365;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: opacity 0.3s, color 0.3s;
+  transition: opacity 0.3s, color 0.3s;
+}
+.popup-reservacion-place .popup-reservation-place-box-button-reservation .popup-reservation-place-button-go-to-booking:hover {
+  opacity: 0.96;
+  color: #ecb365;
 }/*# sourceMappingURL=PopupReservationPlace.css.map */

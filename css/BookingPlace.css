@@ -1,0 +1,68 @@
+.booking-place-box {
+  border-radius: 10px;
+  background-color: #04293a;
+  color: #fff;
+  width: 550px;
+  height: 370px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+.booking-place-box .booking-place-main-text {
+  text-align: center;
+  padding: 10px;
+  font-size: 28px;
+}
+.booking-place-box .booking-place-details {
+  padding: 20px;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.booking-place-box .booking-place-details .booking-place-details-text-color {
+  padding: 20px;
+  text-align: center;
+  color: #ecb365;
+}
+.booking-place-box .booking-place-box-buttons {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+.booking-place-box .booking-place-box-buttons .booking-place-box-button {
+  padding: 10px 20px;
+  font-size: 14px;
+  border: 2px solid #ecb365;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: opacity 0.3s, color 0.3s;
+  transition: opacity 0.3s, color 0.3s;
+}
+.booking-place-box .booking-place-box-buttons .booking-place-box-button:hover {
+  opacity: 0.96;
+  color: #ecb365;
+}/*# sourceMappingURL=BookingPlace.css.map */

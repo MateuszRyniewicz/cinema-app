@@ -1,7 +1,9 @@
 @import '../../styles//varibles.scss';
 
 .popup-reservacion-place {
-	padding: 20px;
+	background-color: $main-color-bacground;
+	border-radius: 10px 10px;
+	padding: 30px 50px;
 	position: fixed;
 	top: 50%;
 	left: 50%;
@@ -19,8 +21,28 @@
 			background-color: transparent;
 			border: none;
 			color: $third-color;
-			font-size: 14px;
+			font-size: 16px;
 			cursor: pointer;
+		}
+	}
+	.popup-reservation-place-box-button-reservation {
+		padding: 10px;
+		display: flex;
+		justify-content: center;
+		border: 1px solid $third-color;
+		border-radius: 0 0 10px 10px;
+
+		.popup-reservation-place-button-go-to-booking {
+			padding: 10px 20px;
+			font-size: 14px;
+			border: 2px solid $second-color;
+			border-radius: 10px;
+			cursor: pointer;
+			transition: opacity 0.3s, color 0.3s;
+			&:hover {
+				opacity: 0.96;
+				color: $second-color;
+			}
 		}
 	}
 }

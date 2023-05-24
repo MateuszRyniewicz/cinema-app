@@ -1,7 +1,6 @@
 @import '../../styles//varibles.scss';
 
 .movie-page-container-table {
-	border: 1px solid #000;
 	padding: 30px;
 
 	.movie-page-table {
@@ -9,7 +8,7 @@
 
 		.movie-page-th {
 			padding: 15px;
-			border: 1px solid black;
+			border: 1px solid $forth-color;
 			font-size: 18px;
 			color: $second-color;
 		}
@@ -17,19 +16,20 @@
 		.movie-page-tr {
 			color: $third-color;
 			.movie-page-td {
-				border: 1px solid #000;
+				border: 1px solid $forth-color;
 				padding: 16px;
 				font-size: 18px;
 
 				.movie-page-button {
-					padding: 8px 12px;
-					font-size: 16px;
-					cursor: pointer;
+					padding: 10px 20px;
+					font-size: 14px;
+					border: 2px solid $second-color;
 					border-radius: 10px;
-					transition: opacity 0.3s, background-color 0.3s;
+					cursor: pointer;
+					transition: opacity 0.3s, color 0.3s;
 					&:hover {
-						opacity: 0.6;
-						background-color: $second-color;
+						opacity: 0.96;
+						color: $second-color;
 					}
 				}
 			}

@@ -1,0 +1,54 @@
+@import '../../styles/varibles.scss';
+
+.booking-place-box {
+	border-radius: 10px;
+	background-color: $fifth-color;
+	color: $third-color;
+	width: 550px;
+	height: 370px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 15px;
+
+	.booking-place-main-text {
+		text-align: center;
+		padding: 10px;
+		font-size: 28px;
+	}
+
+	.booking-place-details {
+		padding: 20px;
+		font-size: 20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+
+		.booking-place-details-text-color {
+			padding: 20px;
+			text-align: center;
+			color: $second-color;
+		}
+	}
+
+	.booking-place-box-buttons {
+		padding: 10px;
+		display: flex;
+		gap: 20px;
+
+		.booking-place-box-button {
+			padding: 10px 20px;
+			font-size: 14px;
+			border: 2px solid $second-color;
+			border-radius: 10px;
+			cursor: pointer;
+			transition: opacity 0.3s, color 0.3s;
+			&:hover {
+				opacity: 0.96;
+				color: $second-color;
+			}
+		}
+	}
+}

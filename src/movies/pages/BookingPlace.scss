@@ -1,22 +1,76 @@
 @import '../../styles/varibles.scss';
 
 .booking-place-box {
-	border-radius: 10px;
-	background-color: $fifth-color;
-	color: $third-color;
 	width: 450px;
 	height: 370px;
+	border-radius: 10px;
+	background-color: $fifth-color;
+
+	color: $third-color;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	gap: 15px;
 
+	@media (min-width: 300px) {
+		width: 280px;
+		height: 300px;
+		gap: 0px;
+	}
 
+	@media (min-width: 375px) {
+		width: 300px;
+		height: 320px;
+		gap: 0;
+	}
+
+	@media (min-width: 768px) {
+		width: 400px;
+		height: 340px;
+		gap: 5px;
+	}
+
+	@media (min-width: 992px) {
+		width: 450px;
+		height: 370px;
+		gap: 10px;
+	}
+
+	@media (min-width: 1200px) {
+		width: 450px;
+		height: 370px;
+		gap: 15px;
+	}
 	.booking-place-main-text {
 		text-align: center;
 		padding: 10px;
 		font-size: 28px;
+
+		@media (min-width: 300px) {
+			padding: 0px;
+			font-size: 18px;
+		}
+
+		@media (min-width: 375px) {
+			padding: 0;
+			font-size: 20px;
+		}
+
+		@media (min-width: 768px) {
+			padding: 5;
+			font-size: 22px;
+		}
+
+		@media (min-width: 992px) {
+			padding: 10px;
+			font-size: 24px;
+		}
+
+		@media (min-width: 1200px) {
+			padding: 10px;
+			font-size: 28px;
+		}
 	}
 
 	.booking-place-details {
@@ -26,6 +80,26 @@
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
+
+		@media (min-width: 300px) {
+			font-size: 12px;
+		}
+
+		@media (min-width: 375px) {
+			font-size: 14px;
+		}
+
+		@media (min-width: 768px) {
+			font-size: 16px;
+		}
+
+		@media (min-width: 992px) {
+			font-size: 18px;
+		}
+
+		@media (min-width: 1200px) {
+			font-size: 20px;
+		}
 
 		.booking-place-details-text-color {
 			padding: 20px;
@@ -49,6 +123,31 @@
 			&:hover {
 				opacity: 0.96;
 				color: $second-color;
+			}
+
+			@media (min-width: 300px) {
+				font-size: 8px;
+				padding: 5px 10px;
+			}
+
+			@media (min-width: 375px) {
+				font-size: 10px;
+				padding: 6px 12px;
+			}
+
+			@media (min-width: 768px) {
+				font-size: 12px;
+				padding: 8px 16px;
+			}
+
+			@media (min-width: 992px) {
+				font-size: 14px;
+				padding: 10px 20px;
+			}
+
+			@media (min-width: 1200px) {
+				font-size: 14px;
+				padding: 10px 20px;
 			}
 		}
 	}

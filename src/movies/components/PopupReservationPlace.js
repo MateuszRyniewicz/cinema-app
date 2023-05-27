@@ -6,7 +6,6 @@ import './PopupReservationPlace.scss';
 
 const SquarePlace = ({ number, isAvailable, isBooked, handleBookPlace }) => {
 	return (
-
 		<div
 			style={{
 				width: '30px',
@@ -68,7 +67,6 @@ const PopupReservationPlace = ({ setIsOpen, term, id }) => {
 	};
 
 	return (
-		
 		<>
 			<div className='popup-reservacion-place'>
 				<div className='popup-reservation-place-box-button'>
@@ -81,7 +79,9 @@ const PopupReservationPlace = ({ setIsOpen, term, id }) => {
 				{renderBoard(10, 10)}
 				{isBooked.length > 0 && (
 					<div className='popup-reservation-place-box-button-reservation'>
-						<button className='popup-reservation-place-button-go-to-booking' onClick={() => navigate(`/booking/${placesURL}-${id}`)}>
+						<button
+							className='popup-reservation-place-button-go-to-booking'
+							onClick={() => navigate(`/booking/${placesURL}-${id}`)}>
 							Zarezerwuj
 						</button>
 					</div>

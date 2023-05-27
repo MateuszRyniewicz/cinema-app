@@ -24,8 +24,19 @@
           flex-direction: column;
   gap: 20px;
 }
+@media (max-width: 375px) {
+  .main-home-page .container-home-page {
+    padding: 50px 0;
+  }
+}
+@media (max-width: 576px) {
+  .main-home-page .container-home-page {
+    padding: 60px 0;
+  }
+}
 .main-home-page .container-home-page .home-page-box-text {
   margin-bottom: 30px;
+  text-align: center;
   padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -47,10 +58,40 @@
   font-size: 30px;
   font-weight: 300;
 }
+@media (max-width: 768px) {
+  .main-home-page .container-home-page .home-page-box-text .home-page-text-main {
+    font-size: 38px;
+  }
+}
+@media (max-width: 992px) {
+  .main-home-page .container-home-page .home-page-box-text .home-page-text-main {
+    font-size: 44px;
+  }
+}
 .main-home-page .container-home-page .home-page-box-text .home-page-text-below {
   color: #fff;
   font-size: 16px;
   font-weight: 500;
+}
+@media (max-width: 375px) {
+  .main-home-page .container-home-page .home-page-box-text .home-page-text-below {
+    font-size: 12px;
+  }
+}
+@media (max-width: 576px) {
+  .main-home-page .container-home-page .home-page-box-text .home-page-text-below {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .main-home-page .container-home-page .home-page-box-text .home-page-text-below {
+    font-size: 18px;
+  }
+}
+@media (max-width: 992px) {
+  .main-home-page .container-home-page .home-page-box-text .home-page-text-below {
+    font-size: 22px;
+  }
 }
 .main-home-page .container-home-page .home-page-box-button {
   padding: 0 5px;

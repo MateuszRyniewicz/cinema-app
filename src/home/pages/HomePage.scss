@@ -16,9 +16,16 @@ $third-color: #fff;
 		align-items: center;
 		flex-direction: column;
 		gap: 20px;
+
+		@media (max-width: 375px) {
+			padding: 50px 0;
+		}
+		@media (max-width: 576px) {
+			padding: 60px 0;
+		}
 		.home-page-box-text {
 			margin-bottom: 30px;
-
+			text-align: center;
 			padding: 20px;
 			display: flex;
 			justify-content: center;
@@ -30,12 +37,32 @@ $third-color: #fff;
 				color: $third-color;
 				font-size: 30px;
 				font-weight: 300;
+
+				@media (max-width: 768px) {
+					font-size: 38px;
+				}
+				@media (max-width: 992px) {
+					font-size: 44px;
+				}
 			}
 
 			.home-page-text-below {
 				color: $third-color;
 				font-size: 16px;
 				font-weight: 500;
+
+				@media (max-width: 375px) {
+					font-size: 12px;
+				}
+				@media (max-width: 576px) {
+					font-size: 14px;
+				}
+				@media (max-width: 768px) {
+					font-size: 18px;
+				}
+				@media (max-width: 992px) {
+					font-size: 22px;
+				}
 			}
 		}
 		.home-page-box-button {

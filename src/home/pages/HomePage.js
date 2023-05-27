@@ -12,7 +12,7 @@ const HomePage = () => {
 			<main className='main-home-page'>
 				<div className='container-home-page'>
 					<div className='home-page-box-text'>
-						<h2 className='home-page-text-main'>Witamy w naszym Kinie </h2>
+						<h2 className='home-page-text-main'>Witamy w naszym kinie </h2>
 						<h4 className='home-page-text-below'>
 							Zapraszamy do zapoznania się z naszymi filmami
 						</h4>

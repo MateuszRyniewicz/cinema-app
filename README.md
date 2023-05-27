@@ -6,3 +6,4 @@
 - CA1: Stylowanie Tabeli w MoviePage. 
 - CA1: dodanie funkcjonalności przekazywania id w url'u.
 - CA1: stylowanie popup reservation.
+-CA1: dodanie breakpointów.

@@ -1,6 +1,4 @@
-$main-color-bacground: #041c32;
-$second-color: #ecb365;
-$third-color: #fff;
+@import '../../styles/varibles.scss';
 
 .main-home-page {
 	width: 70%;
@@ -17,7 +15,7 @@ $third-color: #fff;
 		align-items: center;
 		flex-direction: column;
 		gap: 20px;
-		
+
 		@media (min-width: 300px) {
 			padding: 20px 0;
 			gap: 0;

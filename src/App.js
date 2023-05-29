@@ -11,6 +11,7 @@ import './styles/global.scss';
 
 const App = () => {
 	return (
+		
 		<Router>
 			<Routes>
 				<Route path='/' element={<HomePage />} />

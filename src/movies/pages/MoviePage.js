@@ -9,6 +9,7 @@ import PopupReservationPlace from '../components/PopupReservationPlace';
 
 import './MoviePage.scss';
 
+
 const MoviePage = () => {
 	const [isOpenPopupReservactionPlace, setIsOpenPopupReservactionPlace] =
 		useState(false);

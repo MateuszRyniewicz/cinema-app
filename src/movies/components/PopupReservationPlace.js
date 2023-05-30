@@ -4,6 +4,7 @@ import { termsPlaces } from '../../db/termsPlaces';
 
 import './PopupReservationPlace.scss';
 
+
 const SquarePlace = ({ number, isAvailable, isBooked, handleBookPlace }) => {
 	return (
 		<div
@@ -23,6 +24,8 @@ const SquarePlace = ({ number, isAvailable, isBooked, handleBookPlace }) => {
 		</div>
 	);
 };
+
+
 const PopupReservationPlace = ({ setIsOpen, term, id }) => {
 	const [isBooked, setBooked] = useState([]);
 
@@ -67,6 +70,7 @@ const PopupReservationPlace = ({ setIsOpen, term, id }) => {
 	};
 
 	return (
+		
 		<>
 			<div className='popup-reservacion-place'>
 				<div className='popup-reservation-place-box-button'>

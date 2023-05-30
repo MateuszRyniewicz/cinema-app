@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 
 import './MovieCard.scss';
 
+
 const MovieCard = ({
 	img,
 	title,

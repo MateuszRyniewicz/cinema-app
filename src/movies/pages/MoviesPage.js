@@ -8,6 +8,7 @@ import { movieTerms } from '../../db/movieTerms';
 
 import './MoviesPages.scss';
 
+
 const MoviesPage = () => {
 	
 	return (

@@ -10,6 +10,7 @@ import PopupConfirmReservation from '../components/PopupConfirmReservation';
 
 import './BookingPlace.scss';
 
+
 const BookingPage = () => {
 	const [isOpen, setIsOpen] = useState(false);
 
@@ -18,7 +19,7 @@ const BookingPage = () => {
 	const bookedPlaces = id.split('-');
 	const movieId = bookedPlaces.pop();
 	const choosenMovie = movies.find((movie) => movie.id === movieId);
-
+	
 	return (
 
 		<LayoutWeb>

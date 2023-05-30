@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import './LayoutWeb.scss';
 
+
 const LayoutWeb = ({ children }) => {
 	
 	return (

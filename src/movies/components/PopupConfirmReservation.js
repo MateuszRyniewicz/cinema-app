@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 import './PopupConfirmReservation.scss';
 
+
 const PopupConfirmReservation = ({ choosenMovie, bookedPlaces }) => {
 
 	return (

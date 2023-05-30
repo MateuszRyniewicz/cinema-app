@@ -5,6 +5,7 @@ import LayoutWeb from '../../_shared/LayoutWeb';
 
 import './HomePage.scss';
 
+
 const HomePage = () => {
 	return (
 		

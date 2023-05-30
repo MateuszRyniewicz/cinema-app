@@ -1,6 +1,7 @@
 import React from 'react';
 import LayoutWeb from '../../_shared/LayoutWeb';
 
+
 const BookingInfoPage = () => {
 	return (
 		

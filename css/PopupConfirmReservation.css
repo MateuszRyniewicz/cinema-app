@@ -16,6 +16,36 @@
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media (min-width: 300px) {
+  .popup-confrim-reservation {
+    width: 280px;
+    height: 300px;
+  }
+}
+@media (min-width: 375px) {
+  .popup-confrim-reservation {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (min-width: 768px) {
+  .popup-confrim-reservation {
+    width: 500px;
+    height: 350px;
+  }
+}
+@media (min-width: 992px) {
+  .popup-confrim-reservation {
+    width: 550px;
+    height: 370px;
+  }
+}
+@media (min-width: 1200px) {
+  .popup-confrim-reservation {
+    width: 550px;
+    height: 370px;
+  }
+}
 .popup-confrim-reservation .popup-confirm-reservation-details {
   width: 50%;
   height: 100%;
@@ -29,11 +59,41 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 10px;
+  padding: 15px;
 }
 .popup-confrim-reservation .popup-confirm-reservation-details .popup-confirm-reservation-details-text {
-  padding: 40px;
   text-align: center;
+  font-size: 20px;
+}
+@media (min-width: 300px) {
+  .popup-confrim-reservation .popup-confirm-reservation-details .popup-confirm-reservation-details-text {
+    padding: 15px;
+    font-size: 12px;
+  }
+}
+@media (min-width: 375px) {
+  .popup-confrim-reservation .popup-confirm-reservation-details .popup-confirm-reservation-details-text {
+    padding: 15px;
+    font-size: 14px;
+  }
+}
+@media (min-width: 768px) {
+  .popup-confrim-reservation .popup-confirm-reservation-details .popup-confirm-reservation-details-text {
+    padding: 20px;
+    font-size: 16;
+  }
+}
+@media (min-width: 992px) {
+  .popup-confrim-reservation .popup-confirm-reservation-details .popup-confirm-reservation-details-text {
+    padding: 22px;
+    font-size: 18px;
+  }
+}
+@media (min-width: 1200px) {
+  .popup-confrim-reservation .popup-confirm-reservation-details .popup-confirm-reservation-details-text {
+    font-size: 20px;
+    padding: 20px;
+  }
 }
 .popup-confrim-reservation .popup-confirm-reservation-details .popup-confirm-reservation-details-text .popup-confirm-reservation-details-text-color {
   padding: 10px;
@@ -64,6 +124,36 @@
 .popup-confrim-reservation .popup-confirm-reservation-details .popup-confirm-reservation-details-box-buttons .popup-confirm-reservation-details-button:hover {
   opacity: 0.96;
   color: #ecb365;
+}
+@media (min-width: 300px) {
+  .popup-confrim-reservation .popup-confirm-reservation-details .popup-confirm-reservation-details-box-buttons .popup-confirm-reservation-details-button {
+    font-size: 8px;
+    padding: 6px 12px;
+  }
+}
+@media (min-width: 375px) {
+  .popup-confrim-reservation .popup-confirm-reservation-details .popup-confirm-reservation-details-box-buttons .popup-confirm-reservation-details-button {
+    font-size: 8px;
+    padding: 6px 12px;
+  }
+}
+@media (min-width: 768px) {
+  .popup-confrim-reservation .popup-confirm-reservation-details .popup-confirm-reservation-details-box-buttons .popup-confirm-reservation-details-button {
+    font-size: 12px;
+    padding: 10px 20px;
+  }
+}
+@media (min-width: 992px) {
+  .popup-confrim-reservation .popup-confirm-reservation-details .popup-confirm-reservation-details-box-buttons .popup-confirm-reservation-details-button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .popup-confrim-reservation .popup-confirm-reservation-details .popup-confirm-reservation-details-box-buttons .popup-confirm-reservation-details-button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
 }
 .popup-confrim-reservation .popup-confirm-reservation-box-image {
   width: 50%;

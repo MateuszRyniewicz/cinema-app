@@ -8,6 +8,31 @@
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
+@media (min-width: 300px) {
+  .popup-reservacion-place {
+    padding: 8px 24px;
+  }
+}
+@media (min-width: 375px) {
+  .popup-reservacion-place {
+    font-size: 12px;
+  }
+}
+@media (min-width: 768px) {
+  .popup-reservacion-place {
+    font-size: 14px;
+  }
+}
+@media (min-width: 992px) {
+  .popup-reservacion-place {
+    font-size: 16px;
+  }
+}
+@media (min-width: 992px) {
+  .popup-reservacion-place {
+    font-size: 18px;
+  }
+}
 .popup-reservacion-place .popup-reservation-place-box-button {
   padding: 5px;
   width: 105%;
